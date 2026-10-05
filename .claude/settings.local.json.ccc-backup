@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rmdir examples *)",
+      "Bash(cargo run *)",
+      "Bash(cargo clippy *)"
+    ]
+  }
+}
