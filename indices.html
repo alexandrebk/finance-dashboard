@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance — Indices & ETF</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f9cf9'/%3E%3Ctext x='16' y='23' font-size='22' font-family='system-ui,sans-serif' font-weight='700' text-anchor='middle' fill='%23fff'%3E%E2%82%AC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>💰 Finance</h1>
+    <span id="last-update" class="last-update"></span>
+  </header>
+
+  <nav class="mainnav">
+    <a href="index.html">Taux</a>
+    <a href="indices.html" class="active">Indices &amp; ETF</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Indices boursiers — performance (base 100)</h2>
+      <p class="hint">Évolution depuis octobre 2023, chaque indice ramené à 100 au départ.</p>
+      <div class="chart-box">
+        <canvas id="chart-indices-history"></canvas>
+      </div>
+    </section>
+
+    <section>
+      <h2>ETF — performance (base 100)</h2>
+      <p class="hint">Évolution depuis octobre 2023, chaque ETF ramené à 100 au départ.</p>
+      <div class="chart-box">
+        <canvas id="chart-etfs-history"></canvas>
+      </div>
+    </section>
+
+    <section>
+      <h2>Valeur d'un instrument</h2>
+      <div class="controls">
+        <label>Instrument
+          <select id="select-instrument"></select>
+        </label>
+      </div>
+      <div class="chart-box">
+        <canvas id="chart-instrument"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/indices.js"></script>
+</body>
+</html>

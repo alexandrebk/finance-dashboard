@@ -30,6 +30,28 @@ body {
 
 .last-update { color: var(--muted); font-size: 0.85rem; }
 
+.mainnav {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.mainnav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid transparent;
+  font-size: 0.95rem;
+}
+
+.mainnav a:hover { color: var(--text); }
+
+.mainnav a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 main { padding: 1.5rem; max-width: 1100px; margin: 0 auto; }
 
 section h2 { margin-top: 2.5rem; }
